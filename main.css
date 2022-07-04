@@ -1,0 +1,43 @@
+/* calculator UI styles */
+
+.calculator-grid {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(4, 50px);
+    grid-template-rows: minmax(80px, auto) repeat(5, 50px);
+    }
+
+    .calculator-grid > button {
+      cursor: pointer;
+      font-size: 2rem;
+      border: 1px, solid #FFFFFF;
+      outline: none;
+      background-color: rbga(255, 255, 255, 0.75);
+    }
+
+      .calculator-grid > button:hover {
+        background-color: #a9a9a9;
+      }
+
+      .calculator-grid > button:active {
+        background-color: #3d3b3b;
+      }
+
+      .output{
+        grid-column: 1 / -1;
+        background-color: rgba(0, 0, 0, 0.75);
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-around;
+        flex-direction: column;
+        padding: 10px;
+        word-wrap: break-word;
+        word-break: break-all;
+        color: white;
+        font-size: 2.5rem;
+      }
+
+body {
+    text-align: center;
+}
